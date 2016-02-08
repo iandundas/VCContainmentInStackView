@@ -17,14 +17,21 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        let item = NSBundle.mainBundle().loadNibNamed("ReactiveInputStackItem", owner: self, options: nil).first as! UIView
+        item.backgroundColor = UIColor.randomColor()
+        stackView.addArrangedSubview(item)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
+    
 }
 
+class ReactiveInputStackItem: UIView{
+    
+    @IBOutlet weak var slider: UISlider!
+}
+
+extension UIColor{
+    static func randomColor()->UIColor{
+        return UIColor(red: CGFloat(drand48()), green: CGFloat(drand48()), blue: CGFloat(drand48()), alpha: 0.5)
+    }
+}
