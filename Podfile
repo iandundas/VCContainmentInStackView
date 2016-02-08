@@ -2,6 +2,7 @@
 use_frameworks!
 
 target 'ReactiveStackView' do
-    pod 'RxSwift',    '~> 2.0'
-    pod 'RxCocoa',    '~> 2.0'
+    pod 'ReactiveKit', '~> 1.0'
+    pod 'ReactiveUIKit', '~> 1.0'
+    pod 'ReactiveFoundation', '~> 1.0'
 end

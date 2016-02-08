@@ -1,16 +1,21 @@
 PODS:
-  - RxCocoa (2.1.0):
-    - RxSwift (~> 2.0)
-  - RxSwift (2.1.0)
+  - ReactiveFoundation (1.0.4):
+    - ReactiveKit
+  - ReactiveKit (1.1.2)
+  - ReactiveUIKit (1.0.10):
+    - ReactiveFoundation
+    - ReactiveKit
 
 DEPENDENCIES:
-  - RxCocoa (~> 2.0)
-  - RxSwift (~> 2.0)
+  - ReactiveFoundation (~> 1.0)
+  - ReactiveKit (~> 1.0)
+  - ReactiveUIKit (~> 1.0)
 
 SPEC CHECKSUMS:
-  RxCocoa: 79b5feb8378545336e756a0a33fcf5e95050b71c
-  RxSwift: 110fb07f81c17c2c3b3254d168363057b1880d18
+  ReactiveFoundation: ea146bd578c3e9c9c5d0b2fc87320f10ac7917bb
+  ReactiveKit: 63d00d64e93d29c60cd034601da083d52b415a9a
+  ReactiveUIKit: b3abc88e716ebd60f9c08708ee148e4b8e94c137
 
-PODFILE CHECKSUM: df0f37a96a6beef7841f3096ea78255d5df2b3c7
+PODFILE CHECKSUM: 262d5903cd38705f5f109ed1c1d711fe30d08b44
 
 COCOAPODS: 1.0.0.beta.2

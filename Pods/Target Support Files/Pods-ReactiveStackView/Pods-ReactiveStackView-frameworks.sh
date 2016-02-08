@@ -84,10 +84,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-ReactiveStackView/RxCocoa.framework"
-  install_framework "Pods-ReactiveStackView/RxSwift.framework"
+  install_framework "Pods-ReactiveStackView/ReactiveFoundation.framework"
+  install_framework "Pods-ReactiveStackView/ReactiveKit.framework"
+  install_framework "Pods-ReactiveStackView/ReactiveUIKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-ReactiveStackView/RxCocoa.framework"
-  install_framework "Pods-ReactiveStackView/RxSwift.framework"
+  install_framework "Pods-ReactiveStackView/ReactiveFoundation.framework"
+  install_framework "Pods-ReactiveStackView/ReactiveKit.framework"
+  install_framework "Pods-ReactiveStackView/ReactiveUIKit.framework"
 fi

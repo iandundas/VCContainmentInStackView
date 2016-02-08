@@ -9,12 +9,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>RxCocoa.xcscheme</key>
+		<key>ReactiveFoundation.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>RxSwift.xcscheme</key>
+		<key>ReactiveKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ReactiveUIKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>605B7A3CB78A4A4EE79F853FC41FF17C</key>
+		<key>0A8008F86FD25CC428F1159B0EEAC30A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A189E2A5078FA7BE1AA93AC33E20D723</key>
+		<key>41E3D5EF70FE1CC7DA864C68F4FE564A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FC50773833A10CEBA79DBFBBBF772193</key>
+		<key>DDC7388DC45FDB05A6C387AE2784E775</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EA65B91802B9F95805A29B8D96D1487F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
