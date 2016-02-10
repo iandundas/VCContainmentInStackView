@@ -8,26 +8,44 @@
 
 /* Begin PBXBuildFile section */
 		286710F786EF5A8A02A07A76 /* Pods_ReactiveStackView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 676B22ACBC9A906017E44A0F /* Pods_ReactiveStackView.framework */; };
+		3C7857081C6B86780007EC92 /* ReactiveKit+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7857071C6B86780007EC92 /* ReactiveKit+extensions.swift */; };
+		3C78570B1C6B86970007EC92 /* UIColor+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C78570A1C6B86970007EC92 /* UIColor+extensions.swift */; };
+		3C78570F1C6BAFC00007EC92 /* SliderStackItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C78570E1C6BAFC00007EC92 /* SliderStackItem.swift */; };
+		3C7857111C6BAFC90007EC92 /* ColorStackItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7857101C6BAFC90007EC92 /* ColorStackItem.swift */; };
+		3C7857141C6BB0490007EC92 /* BoxContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7857131C6BB0490007EC92 /* BoxContainerViewController.swift */; };
+		3C7857161C6BB07F0007EC92 /* BoxContainer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C7857151C6BB07F0007EC92 /* BoxContainer.storyboard */; };
+		3C78571C1C6BDCF10007EC92 /* ContainerStackItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C78571B1C6BDCF10007EC92 /* ContainerStackItem.swift */; };
+		3C78571E1C6BDD090007EC92 /* String+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C78571D1C6BDD090007EC92 /* String+extensions.swift */; };
 		3C8E557B1C69226600A6526C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8E557A1C69226600A6526C /* AppDelegate.swift */; };
-		3C8E557D1C69226600A6526C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8E557C1C69226600A6526C /* ViewController.swift */; };
+		3C8E557D1C69226600A6526C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8E557C1C69226600A6526C /* MainViewController.swift */; };
 		3C8E55801C69226600A6526C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C8E557E1C69226600A6526C /* Main.storyboard */; };
 		3C8E55821C69226600A6526C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C8E55811C69226600A6526C /* Assets.xcassets */; };
 		3C8E55851C69226600A6526C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C8E55831C69226600A6526C /* LaunchScreen.storyboard */; };
-		3C8E558E1C692BF200A6526C /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8E558D1C692BF200A6526C /* ViewModel.swift */; };
-		3C8E55941C692E3C00A6526C /* ReactiveInputStackItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C8E55931C692E3C00A6526C /* ReactiveInputStackItem.xib */; };
+		3C8E558E1C692BF200A6526C /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8E558D1C692BF200A6526C /* MainViewModel.swift */; };
+		3C8E55941C692E3C00A6526C /* SliderStackItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C8E55931C692E3C00A6526C /* SliderStackItem.xib */; };
+		3C8E55961C6936AF00A6526C /* ColorStackItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C8E55951C6936AF00A6526C /* ColorStackItem.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2DC1CB78B9053A3232CD81AC /* Pods-ReactiveStackView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveStackView.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveStackView/Pods-ReactiveStackView.release.xcconfig"; sourceTree = "<group>"; };
+		3C7857071C6B86780007EC92 /* ReactiveKit+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ReactiveKit+extensions.swift"; sourceTree = "<group>"; };
+		3C78570A1C6B86970007EC92 /* UIColor+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+extensions.swift"; sourceTree = "<group>"; };
+		3C78570E1C6BAFC00007EC92 /* SliderStackItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderStackItem.swift; sourceTree = "<group>"; };
+		3C7857101C6BAFC90007EC92 /* ColorStackItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorStackItem.swift; sourceTree = "<group>"; };
+		3C7857131C6BB0490007EC92 /* BoxContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoxContainerViewController.swift; sourceTree = "<group>"; };
+		3C7857151C6BB07F0007EC92 /* BoxContainer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BoxContainer.storyboard; sourceTree = "<group>"; };
+		3C78571B1C6BDCF10007EC92 /* ContainerStackItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerStackItem.swift; sourceTree = "<group>"; };
+		3C78571D1C6BDD090007EC92 /* String+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+extensions.swift"; sourceTree = "<group>"; };
 		3C8E55771C69226600A6526C /* ReactiveStackView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveStackView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C8E557A1C69226600A6526C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3C8E557C1C69226600A6526C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3C8E557C1C69226600A6526C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3C8E557F1C69226600A6526C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3C8E55811C69226600A6526C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C8E55841C69226600A6526C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C8E55861C69226600A6526C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3C8E558D1C692BF200A6526C /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		3C8E55931C692E3C00A6526C /* ReactiveInputStackItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReactiveInputStackItem.xib; sourceTree = "<group>"; };
+		3C8E558D1C692BF200A6526C /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		3C8E55931C692E3C00A6526C /* SliderStackItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SliderStackItem.xib; sourceTree = "<group>"; };
+		3C8E55951C6936AF00A6526C /* ColorStackItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorStackItem.xib; sourceTree = "<group>"; };
 		676B22ACBC9A906017E44A0F /* Pods_ReactiveStackView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactiveStackView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B17F36490436DD09B8B80F62 /* Pods-ReactiveStackView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveStackView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveStackView/Pods-ReactiveStackView.debug.xcconfig"; sourceTree = "<group>"; };
 		D38ACF473EB878C01C3C5022 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +63,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C7857091C6B867B0007EC92 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3C7857071C6B86780007EC92 /* ReactiveKit+extensions.swift */,
+				3C78570A1C6B86970007EC92 /* UIColor+extensions.swift */,
+				3C78571D1C6BDD090007EC92 /* String+extensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		3C78570C1C6BAFA20007EC92 /* ITEMS */ = {
+			isa = PBXGroup;
+			children = (
+				3C8E55931C692E3C00A6526C /* SliderStackItem.xib */,
+				3C8E55951C6936AF00A6526C /* ColorStackItem.xib */,
+			);
+			name = ITEMS;
+			sourceTree = "<group>";
+		};
+		3C78570D1C6BAFB00007EC92 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				3C78570E1C6BAFC00007EC92 /* SliderStackItem.swift */,
+				3C7857101C6BAFC90007EC92 /* ColorStackItem.swift */,
+				3C78571B1C6BDCF10007EC92 /* ContainerStackItem.swift */,
+			);
+			name = Items;
+			sourceTree = "<group>";
+		};
+		3C7857121C6BB0270007EC92 /* ChildVCs */ = {
+			isa = PBXGroup;
+			children = (
+				3C7857131C6BB0490007EC92 /* BoxContainerViewController.swift */,
+				3C7857151C6BB07F0007EC92 /* BoxContainer.storyboard */,
+			);
+			name = ChildVCs;
+			sourceTree = "<group>";
+		};
 		3C8E556E1C69226600A6526C = {
 			isa = PBXGroup;
 			children = (
@@ -66,27 +122,30 @@
 		3C8E55791C69226600A6526C /* ReactiveStackView */ = {
 			isa = PBXGroup;
 			children = (
+				3C7857091C6B867B0007EC92 /* Extensions */,
 				3C8E55921C692E0300A6526C /* _ */,
 				3C8E55911C692DFA00A6526C /* Resources */,
-				3C8E558C1C692BB200A6526C /* View */,
+				3C8E558C1C692BB200A6526C /* Views */,
 			);
 			path = ReactiveStackView;
 			sourceTree = "<group>";
 		};
-		3C8E558C1C692BB200A6526C /* View */ = {
+		3C8E558C1C692BB200A6526C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				3C8E557C1C69226600A6526C /* ViewController.swift */,
-				3C8E558D1C692BF200A6526C /* ViewModel.swift */,
+				3C7857121C6BB0270007EC92 /* ChildVCs */,
+				3C78570D1C6BAFB00007EC92 /* Items */,
+				3C8E557C1C69226600A6526C /* MainViewController.swift */,
+				3C8E558D1C692BF200A6526C /* MainViewModel.swift */,
 			);
-			name = View;
+			name = Views;
 			sourceTree = "<group>";
 		};
 		3C8E55911C692DFA00A6526C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3C78570C1C6BAFA20007EC92 /* ITEMS */,
 				3C8E557E1C69226600A6526C /* Main.storyboard */,
-				3C8E55931C692E3C00A6526C /* ReactiveInputStackItem.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -181,10 +240,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C7857161C6BB07F0007EC92 /* BoxContainer.storyboard in Resources */,
+				3C8E55961C6936AF00A6526C /* ColorStackItem.xib in Resources */,
 				3C8E55851C69226600A6526C /* LaunchScreen.storyboard in Resources */,
 				3C8E55821C69226600A6526C /* Assets.xcassets in Resources */,
 				3C8E55801C69226600A6526C /* Main.storyboard in Resources */,
-				3C8E55941C692E3C00A6526C /* ReactiveInputStackItem.xib in Resources */,
+				3C8E55941C692E3C00A6526C /* SliderStackItem.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,8 +304,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C8E557D1C69226600A6526C /* ViewController.swift in Sources */,
-				3C8E558E1C692BF200A6526C /* ViewModel.swift in Sources */,
+				3C8E557D1C69226600A6526C /* MainViewController.swift in Sources */,
+				3C7857081C6B86780007EC92 /* ReactiveKit+extensions.swift in Sources */,
+				3C78571E1C6BDD090007EC92 /* String+extensions.swift in Sources */,
+				3C78571C1C6BDCF10007EC92 /* ContainerStackItem.swift in Sources */,
+				3C78570B1C6B86970007EC92 /* UIColor+extensions.swift in Sources */,
+				3C8E558E1C692BF200A6526C /* MainViewModel.swift in Sources */,
+				3C7857141C6BB0490007EC92 /* BoxContainerViewController.swift in Sources */,
+				3C78570F1C6BAFC00007EC92 /* SliderStackItem.swift in Sources */,
+				3C7857111C6BAFC90007EC92 /* ColorStackItem.swift in Sources */,
 				3C8E557B1C69226600A6526C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
