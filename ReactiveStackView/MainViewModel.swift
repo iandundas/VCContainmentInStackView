@@ -9,14 +9,10 @@
 import Foundation
 import ReactiveKit
 
-struct ViewModel{
+struct MainViewModel{
     
     let count = Observable<Int>(0)
+    let allowedHeight = Observable<CGFloat>(0)
     let color = Observable<UIColor>(UIColor.whiteColor())
     
-    init(){
-        count.observe{ x in
-            print("Value: \(x)")
-        }
-    }
 }

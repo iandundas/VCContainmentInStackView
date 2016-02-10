@@ -20,3 +20,15 @@ public func merge<S: StreamType>(streams: [S]) -> Stream<S.Event> {
         return compositeDisposable
     }
 }
+
+extension StreamType{
+    
+    func log() {
+        self.observe(on: ImmediateExecutionContext, observer: { print($0) })
+    }
+    
+    func log(name name: String) {
+        self.observe(on: ImmediateExecutionContext, observer: { print("\(name): \($0)") })
+    }
+    
+}
