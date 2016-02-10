@@ -10,4 +10,6 @@ An example of an architecture built on a UIStackView (as an alternative to using
 
 This basic example has two sliders, one which controls the height of the bottom item (which shows a scrollView full of rectanges), the other which controls the number of coloured rectangles present in the scrollView. 
 
+It also shows ("On it's own" in the screenshot) how these components can also equally be presented as full-screen regular view controllers as well.
+
 <img src="http://f.cl.ly/items/3Q3C2L1Z441v2X053U2k/Image%202016-02-11%20at%2012.32.14%20am.png" />
