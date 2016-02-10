@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		286710F786EF5A8A02A07A76 /* Pods_ReactiveStackView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 676B22ACBC9A906017E44A0F /* Pods_ReactiveStackView.framework */; };
+		3C7857081C6B86780007EC92 /* ReactiveKit+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7857071C6B86780007EC92 /* ReactiveKit+extensions.swift */; };
+		3C78570B1C6B86970007EC92 /* UIColor+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C78570A1C6B86970007EC92 /* UIColor+extensions.swift */; };
 		3C8E557B1C69226600A6526C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8E557A1C69226600A6526C /* AppDelegate.swift */; };
 		3C8E557D1C69226600A6526C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8E557C1C69226600A6526C /* ViewController.swift */; };
 		3C8E55801C69226600A6526C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C8E557E1C69226600A6526C /* Main.storyboard */; };
@@ -15,10 +17,13 @@
 		3C8E55851C69226600A6526C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C8E55831C69226600A6526C /* LaunchScreen.storyboard */; };
 		3C8E558E1C692BF200A6526C /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8E558D1C692BF200A6526C /* ViewModel.swift */; };
 		3C8E55941C692E3C00A6526C /* ReactiveInputStackItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C8E55931C692E3C00A6526C /* ReactiveInputStackItem.xib */; };
+		3C8E55961C6936AF00A6526C /* ReactiveColorStackItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C8E55951C6936AF00A6526C /* ReactiveColorStackItem.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2DC1CB78B9053A3232CD81AC /* Pods-ReactiveStackView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveStackView.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveStackView/Pods-ReactiveStackView.release.xcconfig"; sourceTree = "<group>"; };
+		3C7857071C6B86780007EC92 /* ReactiveKit+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ReactiveKit+extensions.swift"; sourceTree = "<group>"; };
+		3C78570A1C6B86970007EC92 /* UIColor+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+extensions.swift"; sourceTree = "<group>"; };
 		3C8E55771C69226600A6526C /* ReactiveStackView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveStackView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C8E557A1C69226600A6526C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C8E557C1C69226600A6526C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +33,7 @@
 		3C8E55861C69226600A6526C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C8E558D1C692BF200A6526C /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		3C8E55931C692E3C00A6526C /* ReactiveInputStackItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReactiveInputStackItem.xib; sourceTree = "<group>"; };
+		3C8E55951C6936AF00A6526C /* ReactiveColorStackItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReactiveColorStackItem.xib; sourceTree = "<group>"; };
 		676B22ACBC9A906017E44A0F /* Pods_ReactiveStackView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactiveStackView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B17F36490436DD09B8B80F62 /* Pods-ReactiveStackView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveStackView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveStackView/Pods-ReactiveStackView.debug.xcconfig"; sourceTree = "<group>"; };
 		D38ACF473EB878C01C3C5022 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +51,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C7857091C6B867B0007EC92 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3C7857071C6B86780007EC92 /* ReactiveKit+extensions.swift */,
+				3C78570A1C6B86970007EC92 /* UIColor+extensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		3C8E556E1C69226600A6526C = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +81,7 @@
 		3C8E55791C69226600A6526C /* ReactiveStackView */ = {
 			isa = PBXGroup;
 			children = (
+				3C7857091C6B867B0007EC92 /* Extensions */,
 				3C8E55921C692E0300A6526C /* _ */,
 				3C8E55911C692DFA00A6526C /* Resources */,
 				3C8E558C1C692BB200A6526C /* View */,
@@ -87,6 +103,7 @@
 			children = (
 				3C8E557E1C69226600A6526C /* Main.storyboard */,
 				3C8E55931C692E3C00A6526C /* ReactiveInputStackItem.xib */,
+				3C8E55951C6936AF00A6526C /* ReactiveColorStackItem.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -181,6 +198,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C8E55961C6936AF00A6526C /* ReactiveColorStackItem.xib in Resources */,
 				3C8E55851C69226600A6526C /* LaunchScreen.storyboard in Resources */,
 				3C8E55821C69226600A6526C /* Assets.xcassets in Resources */,
 				3C8E55801C69226600A6526C /* Main.storyboard in Resources */,
@@ -244,6 +262,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C8E557D1C69226600A6526C /* ViewController.swift in Sources */,
+				3C7857081C6B86780007EC92 /* ReactiveKit+extensions.swift in Sources */,
+				3C78570B1C6B86970007EC92 /* UIColor+extensions.swift in Sources */,
 				3C8E558E1C692BF200A6526C /* ViewModel.swift in Sources */,
 				3C8E557B1C69226600A6526C /* AppDelegate.swift in Sources */,
 			);

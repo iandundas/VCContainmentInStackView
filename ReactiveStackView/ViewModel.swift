@@ -7,10 +7,16 @@
 //
 
 import Foundation
-import RxSwift
+import ReactiveKit
 
 struct ViewModel{
     
+    let count = Observable<Int>(0)
+    let color = Observable<UIColor>(UIColor.whiteColor())
     
-    
+    init(){
+        count.observe{ x in
+            print("Value: \(x)")
+        }
+    }
 }
