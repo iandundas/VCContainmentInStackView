@@ -7,7 +7,7 @@ An example of an architecture built upon a UIStackView (as an alternative to usi
 - the `ContainerStackItem` gives us control over the presentation of that VC within the stack
 - this demo shows how they can be bound together to affect one another, using [ReactiveKit](https://github.com/ReactiveKit/ReactiveKit).
 
-This basic example has two sliders, one which controls the height of the bottom item (which shows a scrollView full of rectanges), the other which controls the number of coloured rectangles present in the scrollView. 
+This basic example has two sliders, one which controls the height of the bottom item (which shows a scrollView full of rectanges), the other which controls the number of coloured rectangles present in the scrollView. When the number of boxes overflows the set height, the containing view becomes scrollable.
 
 It also shows ("On it's own" in the screenshot) how these components can also equally be presented as full-screen regular view controllers as well.
 
