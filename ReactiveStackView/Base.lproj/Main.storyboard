@@ -50,7 +50,13 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="🌿" id="awF-vV-OIL"/>
+                    <navigationItem key="navigationItem" title="🌿" id="awF-vV-OIL">
+                        <barButtonItem key="rightBarButtonItem" title="On it's own" id="fda-v8-F3h">
+                            <connections>
+                                <segue destination="1wE-fQ-t1d" kind="show" id="EaG-jY-xfR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="stackView" destination="fE5-JV-iVP" id="9G3-Jf-K0Y"/>
@@ -59,6 +65,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="437" y="362"/>
+        </scene>
+        <!--BoxContainer-->
+        <scene sceneID="WkM-cz-DRM">
+            <objects>
+                <viewControllerPlaceholder storyboardName="BoxContainer" id="1wE-fQ-t1d" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tvz-7Z-RAJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="954" y="100"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JjU-9O-Dr9">

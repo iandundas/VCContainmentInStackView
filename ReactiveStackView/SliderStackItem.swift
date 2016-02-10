@@ -11,10 +11,15 @@ import ReactiveKit
 import ReactiveUIKit
 
 
-class ReactiveInputStackItem: UIView{
+class SliderStackItem: UIView{
     
     @IBOutlet private weak var slider: UISlider!
     @IBOutlet weak var label: UILabel!
     
     lazy var value: Observable<Float> = self.slider.rValue
+    
+    func setMin(min: Float, max:Float){
+        slider.minimumValue = min
+        slider.maximumValue = max
+    }
 }

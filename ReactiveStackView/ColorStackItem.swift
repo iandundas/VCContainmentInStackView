@@ -11,7 +11,7 @@ import ReactiveKit
 import ReactiveUIKit
 
 
-class ReactiveColorStackItem: UIView{
+class ColorStackItem: UIView{
     
     @IBOutlet weak var colorButtonA: UIButton!
     @IBOutlet weak var colorButtonB: UIButton!

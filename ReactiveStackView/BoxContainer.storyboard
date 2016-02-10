@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EOU-B3-ZBm">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Box Container View Controller-->
+        <scene sceneID="Cff-VU-L3l">
+            <objects>
+                <viewController id="EOU-B3-ZBm" customClass="BoxContainerViewController" customModule="ReactiveStackView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fcs-4g-6PF"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ios-2M-DoS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EZ3-AN-oER">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="btL-qh-wrG">
+                                <rect key="frame" x="20" y="20" width="560" height="580"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8WS-qP-uag">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="0.0"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="8WS-qP-uag" secondAttribute="trailing" id="BgH-at-1nc"/>
+                                    <constraint firstItem="8WS-qP-uag" firstAttribute="leading" secondItem="btL-qh-wrG" secondAttribute="leading" id="W9E-Jb-6iE"/>
+                                    <constraint firstItem="8WS-qP-uag" firstAttribute="top" secondItem="btL-qh-wrG" secondAttribute="top" id="af9-Gg-XFG"/>
+                                    <constraint firstItem="8WS-qP-uag" firstAttribute="width" secondItem="btL-qh-wrG" secondAttribute="width" id="bXm-aH-6DW"/>
+                                    <constraint firstAttribute="bottom" secondItem="8WS-qP-uag" secondAttribute="bottom" id="t72-bm-eNA"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="btL-qh-wrG" secondAttribute="trailing" id="A1D-np-dX4"/>
+                            <constraint firstItem="Ios-2M-DoS" firstAttribute="top" secondItem="btL-qh-wrG" secondAttribute="bottom" id="IP8-4u-YuM"/>
+                            <constraint firstItem="btL-qh-wrG" firstAttribute="top" secondItem="EZ3-AN-oER" secondAttribute="topMargin" id="LTb-bk-ixW"/>
+                            <constraint firstItem="btL-qh-wrG" firstAttribute="top" secondItem="Fcs-4g-6PF" secondAttribute="bottom" id="N5i-XW-rbn"/>
+                            <constraint firstItem="btL-qh-wrG" firstAttribute="leading" secondItem="EZ3-AN-oER" secondAttribute="leadingMargin" id="XQ6-ye-xRj"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="N5i-XW-rbn"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="btL-qh-wrG" id="SPh-pq-GXq"/>
+                        <outlet property="stackView" destination="8WS-qP-uag" id="cg6-ro-iC5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ABB-Qj-94k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="644" y="526"/>
+        </scene>
+    </scenes>
+</document>
