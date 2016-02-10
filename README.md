@@ -1,8 +1,7 @@
-# VCContainmentInStackView
-Showing how ViewControllers can be contained within items in a stack view, linked together using ReactiveKit
+# View Controller containment in a StackView
+Showing how ViewControllers can be presented as components within in a UIStackView, linked together using ReactiveKit
 
-An example of an architecture built on a UIStackView (as an alternative to using UITableView)
-
+An example of an architecture built upon a UIStackView (as an alternative to using UITableView):
 - items are positioned on top of each other
 - VCs can be contained in an `ContainerStackItem` item
 - the `ContainerStackItem` gives us control over the presentation of that VC within the stack
