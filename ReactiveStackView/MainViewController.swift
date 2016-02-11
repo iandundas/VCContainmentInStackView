@@ -20,12 +20,12 @@ class MainViewController: UIViewController {
     lazy var countInputStackItem: SliderStackItem = NSBundle.mainBundle().loadNibNamed("SliderStackItem", owner: self, options: nil).first as! SliderStackItem
     lazy var colorStackItem: ColorStackItem = NSBundle.mainBundle().loadNibNamed("ColorStackItem", owner: self, options: nil).first as! ColorStackItem
     
-    lazy var boxesViewController = UIStoryboard(name: "BoxContainer", bundle: nil).instantiateInitialViewController() as! BoxContainerViewController
-    
     lazy var boxesContainerStackItem: ContainerStackItem = {
         self.boxesViewController.viewModel = BoxContainerViewModel(startingCount: 4)
         return ContainerStackItem(childViewController: self.boxesViewController, parentViewController: self)
     }()
+
+    lazy var boxesViewController = UIStoryboard(name: "BoxContainer", bundle: nil).instantiateInitialViewController() as! BoxContainerViewController
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,8 +40,6 @@ class MainViewController: UIViewController {
         setupItemCountBindings()
         setupColorBindings()
         setupHeightBindings()
-        
-        setupObservers()
     }
     
     private func setupControls(){
@@ -99,9 +97,6 @@ class MainViewController: UIViewController {
             .bindTo(heightInputStackItem.label.rText)
     }
     
-    private func setupObservers(){
-//        viewModel.count.log(name: "Count")
-    }
 }
 
 

@@ -24,6 +24,7 @@
 		3C8E558E1C692BF200A6526C /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8E558D1C692BF200A6526C /* MainViewModel.swift */; };
 		3C8E55941C692E3C00A6526C /* SliderStackItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C8E55931C692E3C00A6526C /* SliderStackItem.xib */; };
 		3C8E55961C6936AF00A6526C /* ColorStackItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C8E55951C6936AF00A6526C /* ColorStackItem.xib */; };
+		3CE104C81C6CC62B00EA4D63 /* BoxContainerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE104C71C6CC62B00EA4D63 /* BoxContainerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		3C8E558D1C692BF200A6526C /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		3C8E55931C692E3C00A6526C /* SliderStackItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SliderStackItem.xib; sourceTree = "<group>"; };
 		3C8E55951C6936AF00A6526C /* ColorStackItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorStackItem.xib; sourceTree = "<group>"; };
+		3CE104C71C6CC62B00EA4D63 /* BoxContainerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoxContainerViewModel.swift; sourceTree = "<group>"; };
 		676B22ACBC9A906017E44A0F /* Pods_ReactiveStackView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactiveStackView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B17F36490436DD09B8B80F62 /* Pods-ReactiveStackView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveStackView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveStackView/Pods-ReactiveStackView.debug.xcconfig"; sourceTree = "<group>"; };
 		D38ACF473EB878C01C3C5022 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +99,7 @@
 			children = (
 				3C7857131C6BB0490007EC92 /* BoxContainerViewController.swift */,
 				3C7857151C6BB07F0007EC92 /* BoxContainer.storyboard */,
+				3CE104C71C6CC62B00EA4D63 /* BoxContainerViewModel.swift */,
 			);
 			name = ChildVCs;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				3C78570B1C6B86970007EC92 /* UIColor+extensions.swift in Sources */,
 				3C8E558E1C692BF200A6526C /* MainViewModel.swift in Sources */,
 				3C7857141C6BB0490007EC92 /* BoxContainerViewController.swift in Sources */,
+				3CE104C81C6CC62B00EA4D63 /* BoxContainerViewModel.swift in Sources */,
 				3C78570F1C6BAFC00007EC92 /* SliderStackItem.swift in Sources */,
 				3C7857111C6BAFC90007EC92 /* ColorStackItem.swift in Sources */,
 				3C8E557B1C69226600A6526C /* AppDelegate.swift in Sources */,

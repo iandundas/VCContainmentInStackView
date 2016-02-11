@@ -9,32 +9,6 @@
 import UIKit
 import ReactiveKit
 
-enum BoxAction {
-    case Add(Int)
-    case Remove(Int)
-}
-
-class BoxContainerViewModel {
-    let boxesCount = Observable<Int>(0)
-    let mutations: Stream<BoxAction?>
-    
-    init(startingCount: Int){
-        boxesCount.next(startingCount)
-        
-        mutations = boxesCount.zipPrevious().map { (previousValue:Int?, newValue:Int) -> BoxAction? in
-            guard let previousValue = previousValue else { return .Add(newValue) }
-            guard previousValue != newValue else {return nil}
-            
-            if newValue > previousValue{
-                return .Add(newValue - previousValue)
-            }
-            else {
-                return .Remove(previousValue - newValue)
-            }
-        }
-    }
-}
-
 class BoxContainerViewController: UIViewController{
     
     @IBOutlet weak var scrollView: UIScrollView!
@@ -45,21 +19,19 @@ class BoxContainerViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        viewModel.mutations.ignoreNil().observe { [weak self] mutation in
+        viewModel.addBoxes.observe { [weak self] count in
             guard let strongSelf = self else {return}
-            
-            switch mutation{
-            case .Add(let count):
-                for _ in 0...count {
-                    strongSelf.stackView.addArrangedSubview(Box())
-                }
-                
-            case .Remove(let count):
-                for _ in 0...count {
-                    guard let lastView = strongSelf.stackView.arrangedSubviews.last else {break}
-                    strongSelf.stackView.removeArrangedSubview(lastView)
-                    lastView.removeFromSuperview()
-                }
+            for _ in 0...count {
+                strongSelf.stackView.addArrangedSubview(Box())
+            }
+        }
+        
+        viewModel.removeBoxes.observe { [weak self] count in
+            guard let strongSelf = self else {return}
+            for _ in 0...count {
+                guard let lastView = strongSelf.stackView.arrangedSubviews.last else {break}
+                strongSelf.stackView.removeArrangedSubview(lastView)
+                lastView.removeFromSuperview()
             }
         }
     }
