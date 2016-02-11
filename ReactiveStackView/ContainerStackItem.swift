@@ -15,7 +15,7 @@ class ContainerStackItem: UIView {
     let childViewController: UIViewController
     
     let allowedWidth = Observable<CGFloat>(UIViewNoIntrinsicMetric)
-    let allowedHeight = Observable<CGFloat>(300)
+    let currentHeight = Observable<CGFloat>(300)
     
     init(childViewController: UIViewController, parentViewController: UIViewController){
         self.childViewController = childViewController
@@ -26,7 +26,7 @@ class ContainerStackItem: UIView {
         addSubview(childViewController.view)
         childViewController.didMoveToParentViewController(parentViewController)
         
-        combineLatest(allowedWidth.distinct(), allowedHeight.distinct()).skip(1).observe(on: ImmediateOnMainExecutionContext) { [weak self] _,_ in
+        combineLatest(allowedWidth.distinct(), currentHeight.distinct()).skip(1).observe(on: ImmediateOnMainExecutionContext) { [weak self] _,_ in
             guard let strongSelf = self else {return}
 
             UIView.animateWithDuration(0.2, animations: {
@@ -42,6 +42,6 @@ class ContainerStackItem: UIView {
     }
     
     override func intrinsicContentSize() -> CGSize {
-        return CGSize(width: allowedWidth.value, height: allowedHeight.value)
+        return CGSize(width: allowedWidth.value, height: currentHeight.value)
     }
 }

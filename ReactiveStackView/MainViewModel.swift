@@ -9,10 +9,19 @@
 import Foundation
 import ReactiveKit
 
+let validateHeight: (CGFloat)->(CGFloat, Bool) = { height in
+    return (height, height < 300)
+}
+
 struct MainViewModel{
     
+    let MaxHeight = 300
+    
     let count = Observable<Int>(0)
-    let allowedHeight = Observable<CGFloat>(0)
+    let desiredHeight = Observable<CGFloat>(0)
     let color = Observable<UIColor>(UIColor.whiteColor())
     
+    var allowedHeight: Stream<(CGFloat,Bool)> {
+        return self.desiredHeight.map(validateHeight)
+    }
 }

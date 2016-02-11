@@ -25,7 +25,6 @@ class BoxContainerViewModel {
             guard let previousValue = previousValue else { return .Add(newValue) }
             guard previousValue != newValue else {return nil}
             
-            print("value: \(newValue)")
             if newValue > previousValue{
                 return .Add(newValue - previousValue)
             }
@@ -51,13 +50,11 @@ class BoxContainerViewController: UIViewController{
             
             switch mutation{
             case .Add(let count):
-                print("Add: \(count)")
                 for _ in 0...count {
                     strongSelf.stackView.addArrangedSubview(Box())
                 }
                 
             case .Remove(let count):
-                print("Remove: \(count)")
                 for _ in 0...count {
                     guard let lastView = strongSelf.stackView.arrangedSubviews.last else {break}
                     strongSelf.stackView.removeArrangedSubview(lastView)

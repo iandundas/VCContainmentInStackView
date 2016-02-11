@@ -45,11 +45,11 @@ class MainViewController: UIViewController {
     }
     
     private func setupControls(){
-        heightInputStackItem.setMin(35, max: 300)
+        heightInputStackItem.setMin(35, max: 400)
         heightInputStackItem.label.text = "Allowed Height:"
         
         countInputStackItem.label.text = "Items:"
-        countInputStackItem.setMin(0, max: 200)
+        countInputStackItem.setMin(0, max: 100)
         
         boxesContainerStackItem.layer.borderColor = UIColor.blackColor().CGColor
         boxesContainerStackItem.layer.borderWidth = 1
@@ -88,12 +88,13 @@ class MainViewController: UIViewController {
     private func setupHeightBindings(){
         heightInputStackItem.value
             .map {CGFloat(floor($0))}
-            .bindTo(viewModel.allowedHeight)
+            .bindTo(viewModel.desiredHeight)
+
+        let validHeightStream = viewModel.allowedHeight.filter({_, allowed in allowed}).map{$0.0} // filter only valid values
         
-        viewModel.allowedHeight
-            .bindTo(boxesContainerStackItem.allowedHeight)
-        
-        viewModel.allowedHeight
+        validHeightStream.bindTo(boxesContainerStackItem.currentHeight)
+
+        validHeightStream
             .map { "Allowed Height: \(String(format: "%0.f", $0))pt" }
             .bindTo(heightInputStackItem.label.rText)
     }
